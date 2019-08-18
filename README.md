@@ -19,9 +19,6 @@ NavigationView {
             .navigationBarTitle("Friends")
         }
 ```
-.md-fences .code-tooltip {
-  background-color: #263238;
-}
 
 **Screenshots**
 
