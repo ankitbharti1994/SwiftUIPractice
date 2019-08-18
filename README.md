@@ -2,7 +2,7 @@
 Practice for SwiftUI
 
 **Code**
-![bg](black)
+![bg](#39ffaf)
 ```swift
 NavigationView {
             List {
