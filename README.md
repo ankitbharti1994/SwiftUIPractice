@@ -2,7 +2,7 @@
 Practice for SwiftUI
 
 **Code**
-'''Swift
+```swift
 NavigationView {
             List {
                 Section(header: Text("Close Friends").font(.headline)) {
@@ -17,6 +17,7 @@ NavigationView {
             .navigationBarItems(trailing: EditButton())
             .navigationBarTitle("Friends")
         }
-'''
+```
 
+**Screenshots**
 ![ListView](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/list%20view.png)
