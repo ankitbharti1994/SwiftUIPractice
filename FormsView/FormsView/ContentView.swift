@@ -38,7 +38,13 @@ struct ContentView: View {
                         Text("Save Changes")
                     }.disabled(!enableLogging)
                 }
-            }.navigationBarTitle("Settings")
+            }
+            .navigationBarTitle("Settings", displayMode: .automatic)
+            .navigationBarItems(trailing: Button(action: {
+                print("Info button clicked.")
+            }, label: {
+                Image(systemName: "pencil.tip.crop.circle")
+            }))
         }
     }
 }
