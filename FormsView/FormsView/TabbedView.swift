@@ -10,31 +10,29 @@ import SwiftUI
 
 struct TabbedView: View {
     var body: some View {
-        NavigationView {
-            TabView {
-                Text("First View")
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "pencil.tip")
-                            Text("Pencil")
-                        }
-                }
-                
-                Text("Second View")
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "book")
-                            Text("Book")
-                        }
-                }
-                
-                Text("Third View")
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "icloud")
-                            Text("iCloud")
-                        }
-                }
+        TabView {
+            ContentView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "pencil.tip")
+                        Text("Pencil")
+                    }
+            }
+            
+            ContainerView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "book")
+                        Text("Book")
+                    }
+            }
+            
+            Text("Third View")
+                .tabItem {
+                    VStack {
+                        Image(systemName: "icloud")
+                        Text("iCloud")
+                    }
             }
         }
     }
