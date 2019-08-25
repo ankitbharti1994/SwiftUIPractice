@@ -91,5 +91,5 @@ struct ContentView: View {
 }
 ```
 
-![Start](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Combine01/Screenshots/start.png&s=200)
-![Stop](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Combine01/Screenshots/stop.png&s=200)
+<img src = "https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Combine01/Screenshots/start.png" width = "200" height = "200")
+<img src = "https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Combine01/Screenshots/stop.png" width = "200" height = "200")
