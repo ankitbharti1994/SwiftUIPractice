@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "name": "M S Dhoni",
+        "img": "dhoni",
+        "country": "India",
+        "description": "Mahendra Singh Dhoni, commonly known as MS Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014."
+    },
+    
+    {
+        "id": 2,
+        "name": "Virat Kohli",
+        "img": "virat",
+        "country": "India",
+        "description": "Virat Kohli is an Indian cricketer who currently captains the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best batsmen in the world. He plays for Royal Challengers Bangalore in the Indian Premier League, and has been the team's captain since 2013."
+    },
+    
+    {
+        "id": 3,
+        "name": "Jasprit Bumrah",
+        "img": "bumrah",
+        "country": "India",
+        "description": "Jasprit Jasbirsingh Bumrah is an Indian cricketer who plays for the Indian national cricket team in all formats of the game. He consistently bowls at 140–145 kilometres per hour making him one of the fastest bowlers in India. He also specialises in bowling in-swinging yorker deliveries."
+    },
+    
+    {
+        "id": 4,
+        "name": "K L Rahul",
+        "img": "rahul",
+        "country": "India",
+        "description": "Kannur Lokesh Rahul, commonly known as KL Rahul, is an Indian cricketer. A top-order batsman and occasional wicket-keeper, he plays for India internationally, Karnataka in domestic circuit and Kings XI Punjab in the Indian Premier League."
+    },
+    
+    {
+        "id": 5,
+        "name": "Tim Paine",
+        "img": "tim",
+        "country": "Australia",
+        "description": "Timothy David Paine is an Australian international cricketer who currently captains the Australian national team in Test cricket."
+    },
+    
+    {
+        "id": 6,
+        "name": "Steve Smith",
+        "img": "smith",
+        "country": "Australia",
+        "description": "Steven Peter Devereux Smith is an Australian international cricketer and former captain of the Australian national team. On 30 December 2017, he reached a Test batting rating of 947, the second-highest of all time, only behind Don Bradman's 961."
+    },
+    
+    {
+        "id": 7,
+        "name": "Araon Finch",
+        "img": "finch",
+        "country": "Australia",
+        "description": "Aaron James Finch is an Australian international cricketer who captains the Australian cricket team in limited overs cricket."
+    },
+    
+    {
+        "id": 8,
+        "name": "Mitchell Strac",
+        "img": "starc",
+        "country": "Australia",
+        "description": "Mitchell Aaron Starc is an Australian international cricketer who plays for the Australian national team and New South Wales in domestic cricket. He is a left-arm fast bowler and a capable lower order left-handed batsman."
+    },
+    
+    {
+        "id": 9,
+        "name": "Faf Du Plessis",
+        "img": "faf",
+        "country": "South Africa",
+        "description": "Francois \"Faf\" du Plessis is a South African international cricketer and the current captain of the South African national team across all formats."
+    },
+    
+    {
+        "id": 10,
+        "name": "David Miller",
+        "img": "miller",
+        "country": "South Africa",
+        "description": "David Andrew Miller is a South African cricketer. He is an aggressive left-handed middle order batsman and a right-arm off spin bowler who plays domestic cricket for the Dolphins and is the former"
+    },
+    
+    {
+        "id": 11,
+        "name": "Hasim Amla",
+        "img": "amla",
+        "country": "South Africa",
+        "description": "Hashim Mahomed Amla OIS is a former South African international cricketer who played for South Africa in all three formats of the game. Amla currently holds the record for being the fastest ever to 2000, 3000, 4000, 5000, 6000 and 7000 ODI runs. He also became the fastest cricketer to reach 10 ODI centuries."
+    },
+    
+    {
+        "id": 12,
+        "name": "AB D Villiers",
+        "img": "ABD",
+        "country": "South Africa",
+        "description": "Abraham Benjamin de Villiers, commonly known as AB de Villiers, is a South African former international cricketer. He played for Titans in South African domestic cricket and Royal Challengers Bangalore in the Indian Premier League. In limited overs cricket he is an attacking batsman."
+    }
+]
