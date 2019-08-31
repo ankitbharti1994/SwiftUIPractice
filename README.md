@@ -4,22 +4,28 @@ Practice for SwiftUI
 **Code**
 
 ```swift
-NavigationView {
-            List {
-                Section(header: Text("Close Friends").font(.headline)) {
-                    ForEach(friends) {
-                        FriendView(friend: $0)
+struct PlayerRow: View {
+    let country: String
+    let players: [Player]
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(country)
+                .font(.largeTitle)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 0.0) {
+                    ForEach(self.players) {
+                        PlayerView(person: $0)
                     }
-                    .onMove(perform: self.move(from:to:))
-                    .onDelete(perform: self.delete(_:))
                 }
             }
-            .listStyle(GroupedListStyle())
-            .navigationBarItems(trailing: EditButton())
-            .navigationBarTitle("Friends")
         }
+    }
+}
 ```
 
 **Screenshots**
 
-![ListView](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/list%20view.png)
+![Dark Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/dark.png)
+![Light Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/light.png)
