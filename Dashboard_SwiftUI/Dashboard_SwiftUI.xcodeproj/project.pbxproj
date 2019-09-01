@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6B7E63231B90B500B6A243 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E62231B90B500B6A243 /* DestinationView.swift */; };
 		CEB51F3D231A859200A5B30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB51F3C231A859200A5B30F /* AppDelegate.swift */; };
 		CEB51F3F231A859200A5B30F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB51F3E231A859200A5B30F /* SceneDelegate.swift */; };
 		CEB51F41231A859200A5B30F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB51F40231A859200A5B30F /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6B7E62231B90B500B6A243 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		CEB51F39231A859200A5B30F /* Dashboard_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB51F3C231A859200A5B30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB51F3E231A859200A5B30F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CEB51F40231A859200A5B30F /* ContentView.swift */,
 				CEB51F54231AB62500A5B30F /* PlayerView.swift */,
 				CEB51F56231ABBFB00A5B30F /* PlayerRow.swift */,
+				CE6B7E62231B90B500B6A243 /* DestinationView.swift */,
 				CEB51F50231A85B500A5B30F /* Player.swift */,
 				CEB51F52231A86CD00A5B30F /* player.json */,
 				CEB51F42231A859300A5B30F /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB51F55231AB62500A5B30F /* PlayerView.swift in Sources */,
+				CE6B7E63231B90B500B6A243 /* DestinationView.swift in Sources */,
 				CEB51F57231ABBFB00A5B30F /* PlayerRow.swift in Sources */,
 				CEB51F3D231A859200A5B30F /* AppDelegate.swift in Sources */,
 				CEB51F51231A85B500A5B30F /* Player.swift in Sources */,

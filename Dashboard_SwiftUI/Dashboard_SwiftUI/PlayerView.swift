@@ -13,7 +13,7 @@ struct PlayerView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10.0) {
             Image(person.img)
-                .cornerRadius(20.0)
+                .cornerRadius(15.0)
                 .shadow(radius: 5.0)
             
             VStack(alignment: .leading, spacing: 4.0) {
@@ -25,7 +25,6 @@ struct PlayerView: View {
                     .font(.subheadline)
                     .lineLimit(nil)
             }
-            
         }
         .frame(width: 220.0, height: 400.0)
         .padding(.trailing)
