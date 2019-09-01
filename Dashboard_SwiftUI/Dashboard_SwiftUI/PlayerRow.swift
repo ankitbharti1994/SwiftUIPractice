@@ -14,8 +14,19 @@ struct PlayerRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(country)
+            HStack {
+               Text(country)
                 .font(.largeTitle)
+                
+                Spacer()
+                
+                Button(action: {
+                    print("video button clicked for \(self.country)")
+                }) {
+                    Image(systemName: "video")
+                        .font(.largeTitle)
+                }
+            }
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0.0) {

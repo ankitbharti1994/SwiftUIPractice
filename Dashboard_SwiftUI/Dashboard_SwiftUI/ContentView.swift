@@ -29,6 +29,7 @@ struct ContentView: View {
                 return PlayerRow(country: key, players: persons!)
             }
             .navigationBarTitle("Cricket Players")
+            .padding(.bottom, 5.0)
         }
     }
 }
