@@ -13,6 +13,7 @@ struct ContentView: View {
     private var categories: [String: [Player]] {
         .init(grouping: self.utility.players) { $0.country.rawValue }
     }
+    
     private var keys: [String] {
         self.categories.keys.sorted()
     }

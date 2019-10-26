@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Dashboard_SwiftUI
+//  ImagePicker-SwiftUI
 //
-//  Created by ankit bharti on 31/08/19.
+//  Created by ankit bharti on 26/10/19.
 //  Copyright © 2019 ankit kumar bharti. All rights reserved.
 //
 
@@ -10,6 +10,8 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
