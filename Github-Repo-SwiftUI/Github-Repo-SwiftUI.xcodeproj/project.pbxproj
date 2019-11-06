@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4AD64623733B8300A927B6 /* DetailedRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD64523733B8300A927B6 /* DetailedRepoView.swift */; };
+		CE4AD64823733F1200A927B6 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD64723733F1200A927B6 /* DownloadButton.swift */; };
+		CE4AD64A2373439300A927B6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD6492373439300A927B6 /* Controller.swift */; };
 		CEFFF574237334EF007729CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF573237334EF007729CD /* AppDelegate.swift */; };
 		CEFFF576237334EF007729CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF575237334EF007729CD /* SceneDelegate.swift */; };
 		CEFFF578237334EF007729CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF577237334EF007729CD /* ContentView.swift */; };
 		CEFFF57A237334F0007729CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF579237334F0007729CD /* Assets.xcassets */; };
 		CEFFF57D237334F0007729CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF57C237334F0007729CD /* Preview Assets.xcassets */; };
 		CEFFF580237334F0007729CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF57E237334F0007729CD /* LaunchScreen.storyboard */; };
+		CEFFF58823733521007729CD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF58723733521007729CD /* Service.swift */; };
+		CEFFF58A2373365B007729CD /* Repositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF5892373365B007729CD /* Repositry.swift */; };
+		CEFFF5912373390C007729CD /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF5902373390C007729CD /* RepoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4AD64523733B8300A927B6 /* DetailedRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRepoView.swift; sourceTree = "<group>"; };
+		CE4AD64723733F1200A927B6 /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
+		CE4AD6492373439300A927B6 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		CEFFF570237334EF007729CD /* Github-Repo-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github-Repo-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFFF573237334EF007729CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFFF575237334EF007729CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		CEFFF57C237334F0007729CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEFFF57F237334F0007729CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFFF581237334F0007729CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFFF58723733521007729CD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CEFFF5892373365B007729CD /* Repositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositry.swift; sourceTree = "<group>"; };
+		CEFFF5902373390C007729CD /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4AD64B2373439900A927B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD6492373439300A927B6 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CEFFF567237334EF007729CD = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +76,12 @@
 		CEFFF572237334EF007729CD /* Github-Repo-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				CEFFF573237334EF007729CD /* AppDelegate.swift */,
-				CEFFF575237334EF007729CD /* SceneDelegate.swift */,
-				CEFFF577237334EF007729CD /* ContentView.swift */,
-				CEFFF579237334F0007729CD /* Assets.xcassets */,
-				CEFFF57E237334F0007729CD /* LaunchScreen.storyboard */,
-				CEFFF581237334F0007729CD /* Info.plist */,
+				CE4AD64B2373439900A927B6 /* Controller */,
+				CEFFF58F2373383D007729CD /* Supporting Files */,
+				CEFFF58E23733837007729CD /* View */,
+				CEFFF58D2373382F007729CD /* ViewModel */,
+				CEFFF58C23733829007729CD /* Model */,
+				CEFFF58B23733822007729CD /* Service */,
 				CEFFF57B237334F0007729CD /* Preview Content */,
 			);
 			path = "Github-Repo-SwiftUI";
@@ -73,6 +93,52 @@
 				CEFFF57C237334F0007729CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEFFF58B23733822007729CD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFF58723733521007729CD /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEFFF58C23733829007729CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFF5892373365B007729CD /* Repositry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFFF58D2373382F007729CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFF5902373390C007729CD /* RepoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEFFF58E23733837007729CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFF577237334EF007729CD /* ContentView.swift */,
+				CE4AD64523733B8300A927B6 /* DetailedRepoView.swift */,
+				CE4AD64723733F1200A927B6 /* DownloadButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEFFF58F2373383D007729CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFF573237334EF007729CD /* AppDelegate.swift */,
+				CEFFF575237334EF007729CD /* SceneDelegate.swift */,
+				CEFFF579237334F0007729CD /* Assets.xcassets */,
+				CEFFF57E237334F0007729CD /* LaunchScreen.storyboard */,
+				CEFFF581237334F0007729CD /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4AD64A2373439300A927B6 /* Controller.swift in Sources */,
+				CEFFF5912373390C007729CD /* RepoViewModel.swift in Sources */,
 				CEFFF574237334EF007729CD /* AppDelegate.swift in Sources */,
+				CE4AD64623733B8300A927B6 /* DetailedRepoView.swift in Sources */,
+				CE4AD64823733F1200A927B6 /* DownloadButton.swift in Sources */,
+				CEFFF58823733521007729CD /* Service.swift in Sources */,
+				CEFFF58A2373365B007729CD /* Repositry.swift in Sources */,
 				CEFFF576237334EF007729CD /* SceneDelegate.swift in Sources */,
 				CEFFF578237334EF007729CD /* ContentView.swift in Sources */,
 			);
@@ -286,8 +358,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Github-Repo-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Github-Repo-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Github-Repo-SwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankit.Github-Repo-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,8 +378,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Github-Repo-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Github-Repo-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Github-Repo-SwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankit.Github-Repo-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
