@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HelperView.swift
 //  PropertyWrapper_Example
 //
 //  Created by ankit bharti on 07/11/19.
@@ -8,37 +8,29 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HelperView: View {
     @EnvironmentObject var setting: UserSettings
     
     var body: some View {
         VStack {
-            Spacer()
-            Text("\(self.setting.value)")
+            Text("\(setting.value)")
                 .font(.largeTitle)
-                .accessibility(label: Text("Current counter is \(self.setting.value)"))
             Button(action: {
                 self.setting.value += 1
             }) {
                 Text("Increase count")
                     .font(.largeTitle)
                     .padding()
-                    .accessibility(hint: Text("Tap to increase the counter"))
             }
             .foregroundColor(.purple)
-            
-            Spacer()
-            
-            HelperView()
         }
     }
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct HelperView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(UserSettings())
+        HelperView().environmentObject(UserSettings())
     }
 }
 #endif

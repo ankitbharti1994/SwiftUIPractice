@@ -13,6 +13,8 @@
 		CECFD5CC237471C60002381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFD5CB237471C60002381C /* Assets.xcassets */; };
 		CECFD5CF237471C60002381C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFD5CE237471C60002381C /* Preview Assets.xcassets */; };
 		CECFD5D2237471C60002381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECFD5D0237471C60002381C /* LaunchScreen.storyboard */; };
+		CECFD5DA237473B70002381C /* HelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFD5D9237473B70002381C /* HelperView.swift */; };
+		CECFD5DC237475C70002381C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFD5DB237475C70002381C /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CECFD5CE237471C60002381C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CECFD5D1237471C60002381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECFD5D3237471C60002381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECFD5D9237473B70002381C /* HelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperView.swift; sourceTree = "<group>"; };
+		CECFD5DB237475C70002381C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				CECFD5C5237471C30002381C /* AppDelegate.swift */,
 				CECFD5C7237471C30002381C /* SceneDelegate.swift */,
 				CECFD5C9237471C30002381C /* ContentView.swift */,
+				CECFD5D9237473B70002381C /* HelperView.swift */,
+				CECFD5DB237475C70002381C /* UserSettings.swift */,
 				CECFD5CB237471C60002381C /* Assets.xcassets */,
 				CECFD5D0237471C60002381C /* LaunchScreen.storyboard */,
 				CECFD5D3237471C60002381C /* Info.plist */,
@@ -148,6 +154,8 @@
 			files = (
 				CECFD5C6237471C30002381C /* AppDelegate.swift in Sources */,
 				CECFD5C8237471C30002381C /* SceneDelegate.swift in Sources */,
+				CECFD5DA237473B70002381C /* HelperView.swift in Sources */,
+				CECFD5DC237475C70002381C /* UserSettings.swift in Sources */,
 				CECFD5CA237471C30002381C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PropertyWrapper_Example/Preview Content\"";
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PropertyWrapper_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PropertyWrapper_Example/Preview Content\"";
+				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PropertyWrapper_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
