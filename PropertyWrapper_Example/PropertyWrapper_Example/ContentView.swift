@@ -19,11 +19,14 @@ struct ContentView: View {
                 .accessibility(label: Text("Current counter is \(self.setting.value)"))
             Button(action: {
                 self.setting.value += 1
+                UIAccessibility.post(notification: .screenChanged,
+                                     argument: nil
+                )
             }) {
                 Text("Increase count")
                     .font(.largeTitle)
                     .padding()
-                    .accessibility(hint: Text("Tap to increase the counter"))
+                    .accessibility(hint: Text("Double Tap to increase the counter"))
             }
             .foregroundColor(.purple)
             

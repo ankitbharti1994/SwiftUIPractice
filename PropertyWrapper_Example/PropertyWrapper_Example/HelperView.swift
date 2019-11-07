@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HelperView: View {
     @EnvironmentObject var setting: UserSettings
@@ -15,12 +16,18 @@ struct HelperView: View {
         VStack {
             Text("\(setting.value)")
                 .font(.largeTitle)
+                .accessibility(label: Text("Current counter is \(self.setting.value)"))
+            
             Button(action: {
                 self.setting.value += 1
+                UIAccessibility.post(notification: .screenChanged,
+                                     argument: nil
+                )
             }) {
                 Text("Increase count")
                     .font(.largeTitle)
                     .padding()
+                    .accessibility(hint: Text("Double Tap to increase the counter"))
             }
             .foregroundColor(.purple)
         }
