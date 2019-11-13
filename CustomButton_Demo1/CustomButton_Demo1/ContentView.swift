@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     private let city = ["Patna", "Ranchi", "Kolkata", "Mumbai", "Pune", "Jaipur", "Delhi", "Chandhigadh", "Mohali", "Bangalore"]
     @State private var shouldGreet = false
+    @State private var shouldPresentCity = true
     
     var body: some View {
         NavigationView {
@@ -28,17 +29,24 @@ struct ContentView: View {
                                 .font(.headline)
                                 .foregroundColor(.primary)
                         }
+                        
+                        Toggle(isOn: $shouldPresentCity) {
+                            Text("City")
+                                .font(.headline)
+                        }
                     }
                 }
                 
-                Section(header: Text("City").font(.headline),
-                        footer: Text("Name of the city that either i visited or want to visit in the near future.")
-                ) {
-                    ForEach(self.city, id: \String.self) { text in
-                        NavigationLink(destination: Text(text)) {
-                            Text(text)
-                                .font(.headline)
-                                .foregroundColor(.primary)
+                if shouldPresentCity {
+                    Section(header: Text("City").font(.headline),
+                            footer: Text("Name of the city that either i visited or want to visit in the near future.")
+                    ) {
+                        ForEach(self.city, id: \String.self) { text in
+                            NavigationLink(destination: Text(text)) {
+                                Text(text)
+                                    .font(.headline)
+                                    .foregroundColor(.primary)
+                            }
                         }
                     }
                 }
