@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  PropertyWrapper_Example
+//  CustomButton_Demo1
 //
-//  Created by ankit bharti on 07/11/19.
+//  Created by ankit bharti on 13/11/19.
 //  Copyright © 2019 ankit kumar bharti. All rights reserved.
 //
 
@@ -21,8 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-                            .environmentObject(UserSettings())
-                            .environment(\.horizontalSizeClass, .regular)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
