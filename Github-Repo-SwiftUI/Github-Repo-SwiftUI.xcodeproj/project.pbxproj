@@ -361,6 +361,7 @@
 				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Github-Repo-SwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +382,7 @@
 				DEVELOPMENT_TEAM = H83TSUZGC5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Github-Repo-SwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
