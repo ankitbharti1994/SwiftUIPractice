@@ -9,7 +9,6 @@
 import SwiftUI
 import Combine
 
-
 struct ContentView: View {
     @State private var isDevelopingMacOSApp = false
     @State private var message = ""
@@ -20,8 +19,10 @@ struct ContentView: View {
             Text(self.isDevelopingMacOSApp ? "MacOS Developement" : "iOS Development")
                 .font(.largeTitle)
             CustomButton(isDevelopingMacOSApp: $isDevelopingMacOSApp)
+            Divider()
             Text(message)
         }
+        .frame(height: 200.0)
         .onReceive(self.model.value.receive(on: DispatchQueue.main)) { isPublished in
             self.isDevelopingMacOSApp = isPublished
         }
@@ -34,14 +35,17 @@ struct ContentView: View {
 struct CustomButton: View {
     @Binding var isDevelopingMacOSApp: Bool
     var body: some View {
-        Button(action: {
-            self.isDevelopingMacOSApp.toggle()
-        }) {
-            Text(self.isDevelopingMacOSApp ? "iOS Development" : "MacOS Development")
-                .padding()
-                .background(self.isDevelopingMacOSApp ? Color.red : Color.green)
-                .font(.largeTitle)
-                .foregroundColor(.white)
+        GeometryReader { geometry in
+            Button(action: {
+                self.isDevelopingMacOSApp.toggle()
+            }) {
+                Text(self.isDevelopingMacOSApp ? "iOS Development" : "MacOS Development")
+                    .frame(width: geometry.size.width * 0.8)
+                    .padding()
+                    .background(self.isDevelopingMacOSApp ? Color.red : Color.green)
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+            }
         }
     }
 }
