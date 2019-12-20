@@ -20,7 +20,7 @@ class User: ObservableObject {
 }
 
 struct ContentView: View {
-    @State var user: User
+    @EnvironmentObject var user: User
     @State var isPresented = false
     var body: some View {
         NavigationView {
@@ -36,7 +36,7 @@ struct ContentView: View {
                     .font(.largeTitle)
             })
             .sheet(isPresented: $isPresented, content: {
-                EditDetailsView(user: self.$user)
+                EditDetailsView(user: self.user, mobile: self.user.mobile)
             }))
             .padding()
         }
@@ -44,12 +44,17 @@ struct ContentView: View {
 }
 
 struct EditDetailsView: View {
-    @Binding var user: User
+    let user: User
+    @State var mobile: String
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 Text(user.name)
-                TextField("Mobile", text: $user.mobile)
+                TextField("Mobile", text: $mobile, onEditingChanged: {_ in
+                    
+                }) {
+                    self.user.mobile = self.mobile
+                }
             }
             .navigationBarTitle("User", displayMode: .inline)
             .padding()
@@ -59,6 +64,6 @@ struct EditDetailsView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(user: User(name: "ankit", mobile: "9986057609"))
+        ContentView().environmentObject(User(name: "ankit", mobile: "9986057609"))
     }
 }
