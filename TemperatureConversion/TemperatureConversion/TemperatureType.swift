@@ -9,18 +9,31 @@
 import Foundation
 
 enum TemperatureType: Int, CaseIterable {
-    case celcious = 0, farenhite, kelvin
+    case celsius = 0, fahrenheit, kelvin
     
     var stringValue: String {
         switch self {
-        case .celcious:
-            return "Celcious"
+        case .celsius:
+            return "Celsius"
             
-        case .farenhite:
-            return "Farenhite"
+        case .fahrenheit:
+            return "fahrenheit"
             
         case .kelvin:
             return "Kelvin"
+        }
+    }
+    
+    var unit: UnitTemperature {
+        switch self {
+        case .celsius:
+            return .celsius
+            
+        case .fahrenheit:
+            return .fahrenheit
+            
+        case .kelvin:
+            return .kelvin
         }
     }
 }
