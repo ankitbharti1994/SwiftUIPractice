@@ -16,6 +16,7 @@
 		CE0ADC8923B1DB7300C5DC07 /* TemperatureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADC8823B1DB7300C5DC07 /* TemperatureListView.swift */; };
 		CE0ADC8B23B1DB9900C5DC07 /* TemperatureSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADC8A23B1DB9900C5DC07 /* TemperatureSelectionView.swift */; };
 		CE0ADC8D23B1DBC500C5DC07 /* TemperatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADC8C23B1DBC500C5DC07 /* TemperatureType.swift */; };
+		CEFC1C5223B251CF00FBA1F7 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC1C5123B251CF00FBA1F7 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE0ADC8823B1DB7300C5DC07 /* TemperatureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureListView.swift; sourceTree = "<group>"; };
 		CE0ADC8A23B1DB9900C5DC07 /* TemperatureSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureSelectionView.swift; sourceTree = "<group>"; };
 		CE0ADC8C23B1DBC500C5DC07 /* TemperatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureType.swift; sourceTree = "<group>"; };
+		CEFC1C5123B251CF00FBA1F7 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				CE0ADC7423B1D2BD00C5DC07 /* AppDelegate.swift */,
 				CE0ADC7623B1D2BD00C5DC07 /* SceneDelegate.swift */,
+				CEFC1C5123B251CF00FBA1F7 /* UIApplication+Extension.swift */,
 				CE0ADC8C23B1DBC500C5DC07 /* TemperatureType.swift */,
 				CE0ADC7823B1D2BD00C5DC07 /* ContentView.swift */,
 				CE0ADC8823B1DB7300C5DC07 /* TemperatureListView.swift */,
@@ -161,6 +164,7 @@
 				CE0ADC8923B1DB7300C5DC07 /* TemperatureListView.swift in Sources */,
 				CE0ADC7723B1D2BD00C5DC07 /* SceneDelegate.swift in Sources */,
 				CE0ADC7923B1D2BD00C5DC07 /* ContentView.swift in Sources */,
+				CEFC1C5223B251CF00FBA1F7 /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

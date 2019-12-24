@@ -11,6 +11,7 @@ import SwiftUI
 struct TemperatureListView: View {
     @Binding var selectedTemperature: TemperatureType
     @Binding var isPresented: Bool
+    
     var body: some View {
         NavigationView {
             List(TemperatureType.allCases, id: \.rawValue) { temp in
@@ -19,6 +20,12 @@ struct TemperatureListView: View {
                     self.isPresented.toggle()
                 }) {
                     Text(temp.stringValue)
+                }
+                
+                if self.selectedTemperature == temp {
+                    Spacer()
+                    Image(systemName: "checkmark")
+                        .foregroundColor(.blue)
                 }
             }
             .navigationBarTitle(Text("Temperature List"), displayMode: .inline)

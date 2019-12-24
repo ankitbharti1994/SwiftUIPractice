@@ -24,6 +24,7 @@ struct ContentView: View {
             Form {
                 Section {
                     TextField("Temperature", text: $actualTemperature)
+                        .keyboardType(.decimalPad)
                 }
                 
                 TemperatureSelectionView(title: "What temperature are you converting from", temperatureType: $temperatureTypeFrom)
@@ -35,6 +36,9 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Converter")
+            .onTapGesture(count: 2) {
+                UIApplication.shared.endEditing()
+            }
         }
     }
 }
