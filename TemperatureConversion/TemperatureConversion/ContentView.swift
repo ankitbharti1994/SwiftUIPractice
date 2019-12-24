@@ -14,8 +14,8 @@ struct ContentView: View {
     @State private var temperatureTypeTo: TemperatureType = .fahrenheit
     
     private var convertedTemperature: String {
-        let measurement = Measurement(value: Double(actualTemperature) ?? 0.0, unit: temperatureTypeFrom.unit)
-        let convertedTemp = measurement.converted(to: temperatureTypeTo.unit)
+        let measurement = Measurement(value: Double(actualTemperature) ?? 0.0, unit: temperatureTypeFrom.description.unit)
+        let convertedTemp = measurement.converted(to: temperatureTypeTo.description.unit)
         return String(format: "%.2f", arguments: [convertedTemp.value])
     }
     

@@ -19,7 +19,7 @@ struct TemperatureListView: View {
                     self.selectedTemperature = temp
                     self.isPresented.toggle()
                 }) {
-                    Text(temp.stringValue)
+                    Text(temp.description.stringValue)
                 }
                 
                 if self.selectedTemperature == temp {

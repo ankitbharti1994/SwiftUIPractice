@@ -23,7 +23,7 @@ struct TemperatureSelectionView: View {
                 Button(action: {
                     self.isPresented.toggle()
                 }) {
-                    Text(temperatureType.stringValue)
+                    Text(temperatureType.description.shortName)
                 }
                 .sheet(isPresented: $isPresented) {
                     TemperatureListView(selectedTemperature: self.$temperatureType, isPresented: self.$isPresented)
