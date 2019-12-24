@@ -10,21 +10,7 @@ import SwiftUI
 
 struct TouchBarView: View {
     var body: some View {
-        DifferentView().touchBar (
-            TouchBar {
-                Button(action: {
-                    
-                }) {
-                    Text("ankit")
-                }
-                
-                Button(action: {
-                    
-                }) {
-                    Text("rohit")
-                }
-            }
-        )
+        Text("Hello")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

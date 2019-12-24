@@ -28,6 +28,7 @@ struct TemperatureListView: View {
                         .foregroundColor(.blue)
                 }
             }
+            .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Temperature List"), displayMode: .inline)
         }
     }
