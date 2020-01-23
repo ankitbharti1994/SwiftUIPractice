@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 struct SearchBar: UIViewRepresentable {
     let placeholder: String
@@ -39,6 +40,11 @@ struct SearchBar: UIViewRepresentable {
         
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             self.text = searchText
+            let cancellable = searchText.publisher
+                .debounce(for: 2, scheduler: DispatchQueue.main, options: nil)
+                .sink { character in
+                    print(character)
+            }
         }
         
         func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
