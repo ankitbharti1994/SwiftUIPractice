@@ -40,6 +40,7 @@ struct BarView: View {
                 
                 VStack {
                     Spacer()
+                    Text("\(Int(self.value))")
                     Rectangle()
                         .fill(Color.blue)
                         .frame(width: self.barWidth, height: self.barHeight(from: proxy))
