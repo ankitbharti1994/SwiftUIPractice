@@ -37,10 +37,12 @@ struct BarView: View {
                     .rotationEffect(.degrees(-45.0))
                     .position(x: proxy.frame(in: .local).width * 1.5, y: proxy.size.height)
                     .padding(.bottom, self.itemSpacing / 2)
+                    .accessibility(hidden: true)
                 
                 VStack {
                     Spacer()
                     Text("\(Int(self.value))")
+                        .accessibility(hidden: true)
                     Rectangle()
                         .fill(Color.blue)
                         .frame(width: self.barWidth, height: self.barHeight(from: proxy))

@@ -20,8 +20,8 @@ struct ContentView: View {
                 ForEach(Array(data.enumerated()), id: \.offset) { offset, data in
                     BarView(value: data.value, label: data.label, maxValue: self.maxValue)
                         .frame(height: 500.0)
-                        .accessibility(hidden: false)
-                        .accessibility(label: Text("\(data.value) for \(data.description)"))
+                        .accessibilityElement()
+                        .accessibility(label: Text("\(Int(data.value)) for \(data.description)"))
                         .onTapGesture {
                             self.selectedIndex = offset
                             self.isPresented.toggle()
