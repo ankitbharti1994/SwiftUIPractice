@@ -38,5 +38,5 @@ struct PlayerRow: View {
 
 **Screenshots**
 
-![Dark Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/dark.png)
-![Light Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Screenshots/light.png)
+![Dark Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Dashboard_SwiftUI/Screenshots/screenshot%20dark.png)
+![Light Mode](https://github.com/ankitbharti1994/SwiftUIPractice/blob/master/Dashboard_SwiftUI/Screenshots/screenshot%20light.png)
