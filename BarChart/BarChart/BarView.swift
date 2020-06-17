@@ -21,24 +21,14 @@ struct BarView: View {
 
     private func barHeight(from proxy: GeometryProxy) -> CGFloat {
         let height = proxy.frame(in: .local).height
-        let remainingHeight = height - self.labelHeight - self.itemSpacing
-        let _1PointValue = remainingHeight / CGFloat(self.maxValue)
-        let finalHeight = _1PointValue * CGFloat(self.value)
-        return finalHeight
+        let _value = CGFloat(value) / height
+        print("height: \(height), bar height: \(_value), label: \(label)")
+        return CGFloat(min(_value * CGFloat(maxValue), height))
     }
     
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
-                Text(self.label)
-                    .font(.footnote)
-                    .foregroundColor(.primary)
-                    .frame(width: self.barWidth, height: self.labelHeight)
-                    .rotationEffect(.degrees(-45.0))
-                    .position(x: proxy.frame(in: .local).width * 1.5, y: proxy.size.height)
-                    .padding(.bottom, self.itemSpacing / 2)
-                    .accessibility(hidden: true)
-                
+            VStack {
                 VStack {
                     Spacer()
                     Text("\(Int(self.value))")
@@ -47,7 +37,13 @@ struct BarView: View {
                         .fill(Color.blue)
                         .frame(width: self.barWidth, height: self.barHeight(from: proxy))
                 }
-                .padding(.bottom, self.itemSpacing * 2)
+                
+                Text(self.label)
+                    .font(.footnote)
+                    .foregroundColor(.primary)
+                    .frame(width: self.barWidth, height: self.labelHeight)
+                    .rotationEffect(.degrees(-45.0))
+                    .accessibility(hidden: true)
             }
         }
         .padding([.leading, .trailing, .bottom], self.margin)
